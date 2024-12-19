@@ -1,0 +1,98 @@
+
+<section id="container-slider">
+    <div class="container-service">
+      <a href="./servicios/bienestar/">
+        <img class="services" src="/public/bienestar.png" alt="bienestar florser">
+      </a>
+      <p class="home-service-text">Bienestar</p>
+    </div>
+    <div class="container-service">
+      <a href="#">
+        <img class="services" src="/public/Recurso_Guia.png" alt="guia florser">
+      </a>
+      <p class="home-service-text">Guía</p> 
+    </div>
+    <div class="container-service">
+      <a href="#">
+        <img class="services" src="/public/belleza.png" alt="belleza florser">
+      </a>
+      <p class="home-service-text">Belleza</p>
+    </div>
+    <div class="container-service">
+      <a href="#">
+        <img class="services" src="/public/Recurso_Sanacion.png" alt="sanacion florser">
+      </a>
+      <p class="home-service-text">Sanación</p>
+    </div>
+    <div class="container-service">
+      <a href="#">
+        <img class="services" src="/public/Recurso_limpieza.png" alt="limpieza florser">
+      </a>
+      <p class="home-service-text">Limpieza</p>
+    </div>
+    <div class="container-service">
+      <img class="services" src="/public/Tips,png.webp" alt="tips florser"> 
+      <p class="home-service-text">Tips</p>
+    </div>
+  </section>   
+  
+  <style>
+    /* Contenedor principal del slider */
+    #container-slider {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila en pantallas pequeñas */
+      justify-content: center; /* Centra horizontalmente */
+      gap: 1rem; /* Espaciado entre los elementos */
+      margin: 2rem auto; /* Margen superior e inferior */
+      padding: 1rem; /* Espaciado interno */
+    }
+  
+    /* Cada botón (contenedor individual) */
+    .container-service {
+      display: flex;
+      flex-direction: column; /* Apila imagen y texto verticalmente */
+      align-items: center; /* Centra horizontalmente */
+      text-align: center; /* Centra el texto debajo de la imagen */
+      width: 150px; /* Ajusta el ancho */
+      flex-shrink: 0; /* Evita que se encojan demasiado */
+    }
+  
+    /* Imágenes de los servicios */
+    .services {
+      width: 100%; /* Imágenes adaptables al ancho del contenedor */
+      height: auto; /* Mantiene la proporción de la imagen */
+      border-radius: 8px; /* Esquinas redondeadas */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones */
+    }
+  
+    .services:hover {
+      transform: scale(1.05); /* Efecto zoom al pasar el cursor */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+    }
+  
+    /* Texto de los servicios */
+    .home-service-text {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+  
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .container-service {
+        width: 120px; /* Reduce el tamaño en pantallas más pequeñas */
+      }
+  
+      .home-service-text {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+      }
+    }
+  
+    @media (max-width: 480px) {
+      #container-slider {
+        flex-direction: column; /* Cambia a diseño vertical en pantallas muy pequeñas */
+        align-items: center; /* Centra todos los elementos */
+      }
+    }
+  </style>  
+  

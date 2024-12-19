@@ -1,0 +1,61 @@
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios - Florser</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/servicios.css" />
+  </head>
+  <body> 
+    <main>  
+      <!-- Paginación -->
+      <div class="pagination">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </main> 
+  </body>
+</html>
+
+<style> 
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pagination .dot.active {
+  background-color: orange;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-card-image img {
+    margin-bottom: 20px;
+  }
+
+  .service-card-info p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+</style>
